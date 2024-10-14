@@ -31,7 +31,8 @@ export default function Textform(props) {
         <button className="btn btn-primary my-3 mx-3" onClick={handlelowclick}>Change to Lowcase</button>
         <button className="btn btn-primary my-3 mx-3" onClick={cleartext}>Clear Text</button>
     </div>
-    <div className='container my-2' style={{color: props.mode === 'dark'? 'white':"black"}}>
+    <div className='container my-2' style={{color: props.mode === 'white'? 'white':"black"}}>
+      
     <h1> Yours text summary </h1>
     <p> {text.split(" ").length} words and {text.length} character</p> 
     <p> {0.008 *text.split(" ").length} Minutes</p> 
